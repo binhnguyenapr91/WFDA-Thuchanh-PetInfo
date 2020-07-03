@@ -1,0 +1,12 @@
+<div>
+    <p>Color choose:
+        <select [value]="color" (change)="changeColor($event.target.value)">
+            <option value="#962696">#962696</option>
+            <option value="#E3C866">#E3C866</option>
+            <option value="#E34FE3">#E34FE3</option>
+            <option value="#2D9687">#2D9687</option>
+        </select>
+    </p>
+    <p>Color tracker:</p>
+    <div class="color-preview" [style.background]="color">{{color}}</div>
+</div>
