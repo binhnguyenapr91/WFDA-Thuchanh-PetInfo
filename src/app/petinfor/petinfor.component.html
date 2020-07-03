@@ -1,0 +1,15 @@
+<h1>Welcome to {{title}}</h1>
+<div>
+  <label for="">
+    PetName: 
+    <input type="text" (change)="updateName($event.target.value)">
+  </label>
+  <br>
+  <label for="">
+    PetImage:
+    <input type="url" (change)="updateImage($event.target.value)">
+  </label>
+  <br>
+  <p>PetName: {{petName}}</p>
+  <img [src]="petImage">
+</div>
