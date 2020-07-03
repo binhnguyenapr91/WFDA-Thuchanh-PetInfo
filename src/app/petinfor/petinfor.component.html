@@ -1,15 +1,26 @@
-<h1>Welcome to {{title}}</h1>
-<div>
-  <label for="">
-    PetName: 
-    <input type="text" (change)="updateName($event.target.value)">
-  </label>
-  <br>
-  <label for="">
-    PetImage:
-    <input type="url" (change)="updateImage($event.target.value)">
-  </label>
-  <br>
-  <p>PetName: {{petName}}</p>
-  <img [src]="petImage">
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to</h1>
+    <h2>{{title}}</h2>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <label for="">
+        PetName:
+        <input type="text" (change)="updateName($event.target.value)" />
+      </label>
+      <br />
+      <label for="">
+        PetImage:
+        <input
+          type="url"
+          (change)="updateImage($event.target.value)"
+        />
+      </label>
+    </div>
+    <div class="panel-body">
+      <p>PetName: {{ petName }}</p>
+      <img [src]="petImage" style="width: 100%;"/>
+    </div>
+  </div>
 </div>
