@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PetinforComponent } from './petinfor/petinfor.component';
+import { CalcualtorComponent } from './calcualtor/calcualtor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PetinforComponent
+    PetinforComponent,
+    CalcualtorComponent
   ],
   imports: [
     BrowserModule,
